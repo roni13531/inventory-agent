@@ -1,0 +1,10 @@
+# Exercise runtime packages are exact-pinned for reproducible local/Colab use.
+supabase==2.34.1
+langchain-core==1.8.4
+langgraph==1.2.24
+langchain-openai==1.8.5
+openai==3.59.0
+psycopg[binary]==3.3.9
+
+# Pinned for the frozen DDL in the inventory_checkpoints migration.
+langgraph-checkpoint-postgres==3.2.1

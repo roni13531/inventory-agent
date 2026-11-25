@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inventory-agent-exercise"
+version = "0.2.0"
+description = "Deterministic Supabase tools for the inventory-agent exercise"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "supabase==2.34.1",
+  "langchain-core==1.8.4",
+  "langgraph==1.2.24",
+  "langchain-openai==1.8.5",
+  "openai==3.59.0",
+  "psycopg[binary]==3.3.9",
+  "langgraph-checkpoint-postgres==3.2.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["inventory_agent*"]
